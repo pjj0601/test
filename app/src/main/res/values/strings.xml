@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">test</string>
+    <string-array name="xmNum">
+        <item>请选择</item>
+        <item>竖向抗压检测</item>
+        <item>竖向抗拔检测 </item>
+        <item>水平静载检测</item>
+        <item>压板载荷试验</item>
+        <item>高应变</item>
+        <item>低应变</item>
+    </string-array>
+</resources>

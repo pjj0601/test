@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp">
+
+    <TextView
+        android:id="@+id/pileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="桩号" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+
+    <TableRow >
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="试验方法" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/testtype"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+
+    <TableRow >
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="采样次数" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/recordcount"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+    <TableRow>
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="开始检测时间" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+
+    <TableRow >
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="上传时间" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/createtime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+    <TableRow>
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="最后更新时间" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/updatetime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+
+    <TableRow >
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="厂商标识" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+        <TextView
+            android:id="@+id/creatername"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="" />
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3"/>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="#B4B3B3"/>
+
+
+</TableLayout>

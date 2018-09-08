@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="流水线号:" />
+
+    <EditText
+        android:id="@+id/syNUM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="监管代号:" />
+
+    <EditText
+        android:id="@+id/xmNUM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <!--<Spinner-->
+        <!--android:id="@+id/xm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginHorizontal="10dp"-->
+        <!--android:spinnerMode="dialog"-->
+        <!--android:entries="@array/xmNum"></Spinner>-->
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1.5dip"-->
+        <!--android:background="#B4B3B3"/>-->
+
+    <Button
+        android:id="@+id/submit_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+
+
+</LinearLayout>
