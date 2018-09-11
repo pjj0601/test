@@ -32,4 +32,6 @@ dependencies {
     implementation files('libs/android-async-http-1.4.9.jar')
     implementation files('libs/jackson-core-2.7.3.jar')
     implementation files('libs/jackson-databind-2.7.4.jar')
+    compile group: 'com.android.support', name: 'design', version: '26.1.0'
+    compile 'q.rorbin:VerticalTabLayout:1.2.5'
 }

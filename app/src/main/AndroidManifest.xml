@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ContentActivity"></activity>
+        <activity android:name=".TabScrollActivity"></activity>
     </application>
 
 </manifest>

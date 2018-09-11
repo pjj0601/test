@@ -1,8 +1,13 @@
 package com.example.test;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,7 +34,6 @@ import cz.msebera.android.httpclient.Header;
 
 public class ContentActivity extends AppCompatActivity{
     private static List<Datashow> datashowList = new ArrayList<Datashow>();
-
     String t;
     String pileno;
     String testtype;
@@ -46,8 +50,12 @@ public class ContentActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
-        datashowList.clear();
+
+        final  TabLayout tabLayout = findViewById(R.id.tablayout);
+        final CustomScrollView scrollView = findViewById(R.id.scrollView);
         final TextView test = findViewById(R.id.test);
+
+        datashowList.clear();
         String synum = getIntent().getStringExtra("SYNUM");
         String xmnum = getIntent().getStringExtra("XMNUM");
         AsyncHttpClient  client = new AsyncHttpClient();
@@ -88,17 +96,19 @@ public class ContentActivity extends AppCompatActivity{
                             date.setTime(time);
                             updatetime = sdf.format(date);
                             creatername = jingZaiList.getJSONObject(j).getString("creatername");
+                            tabLayout.addTab(tabLayout.newTab().setText("桩号："+pileno));
                             datashowList.add(new Datashow("桩号："+pileno,testtype,recordcount,starttime,createtime,updatetime,creatername));
                         }
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                Datashowadapter dsa = new Datashowadapter(ContentActivity.this,R.layout.layout,datashowList);
-                ListView listView = findViewById(R.id.list_view);
+                final Datashowadapter dsa = new Datashowadapter(ContentActivity.this,R.layout.layout,datashowList);
+                final ListView listView = findViewById(R.id.list_view);
                 dsa.notifyDataSetChanged();
                 listView.setAdapter(dsa);
                 dsa.notifyDataSetChanged();
+
             }
 
             public void onFailure(int statusCode, Header[] headers, Throwable t, JSONObject e)  {

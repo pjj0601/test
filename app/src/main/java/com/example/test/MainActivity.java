@@ -73,6 +73,28 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        Button btn2 = findViewById(R.id.tabtest);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1 = (EditText) findViewById(R.id.syNUM);
+                et2 = (EditText) findViewById(R.id.xmNUM);
+                synum = et1.getText().toString();
+                xmnum = et2.getText().toString();
+                Intent intent2 = new Intent(MainActivity.this,TabScrollActivity.class);
+                if (synum.isEmpty()&&xmnum.isEmpty()){
+                    AlertDialog.Builder builder2  = new AlertDialog.Builder(MainActivity.this);
+                    builder2.setTitle("提示" ) ;
+                    builder2.setMessage("流水线号和监管代号不能为空。" ) ;
+                    builder2.setPositiveButton("返回",null );
+                    builder2.show();
+                }else {
+                    intent2.putExtra("SYNUM",synum);
+                    intent2.putExtra("XMNUM",xmnum);
+                    startActivity(intent2);
+                }
+            }
+        });
     }
 
 

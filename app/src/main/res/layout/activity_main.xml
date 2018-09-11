@@ -42,6 +42,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="查询" />
+    <Button
+        android:id="@+id/tabtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tab测试"/>
 
 
 </LinearLayout>
